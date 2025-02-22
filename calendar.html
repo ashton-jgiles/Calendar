@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Animated Calendar</title>
-        <link rel="stylesheet" href="styles/generalStyle.css">
-        <script src="calendarScript.js"></script>
-    </head>
-    <body>
-        <center><h1 class="header">Animated Calendar</h1></center>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar App</title>
+  <link rel="stylesheet" href="styles/generalStyle.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prev-month">&#9664;</button>
+      <h2 id="month-year"></h2>
+      <button id="next-month">&#9654;</button>
+    </div>
+    <div class="calendar-grid">
+      <div class="calendar-day">Sun</div>
+      <div class="calendar-day">Mon</div>
+      <div class="calendar-day">Tue</div>
+      <div class="calendar-day">Wed</div>
+      <div class="calendar-day">Thu</div>
+      <div class="calendar-day">Fri</div>
+      <div class="calendar-day">Sat</div>
+    </div>
+    <div class="calendar-days" id="calendar-days"></div>
+  </div>
+
+  <script src="calendarScript.js"></script>
+</body>
 </html>
